@@ -30,7 +30,7 @@
                     session_start();
                     $ListaTutorados=$_SESSION["ListaTutorados"];
 
-                    include("ExtraccionDeClases.php");
+                    include("MovimientoMetodos.php");
                     foreach ($ListaTutorados as $clave => $valor) {
 
             ?>

@@ -28,7 +28,6 @@
                 <div class="p-2 bd-highlight"><a href="Tutorados.php" class="btn btn-secondary">TUTORADOS 2022-I</a></div>
             </div>
 
-
             <br>
 
             <div class="row">
@@ -50,7 +49,7 @@
             
             <br>
 
-            <a href="MenuPrincipal.php"  class="btn btn-danger btn-lg btn-block">Salir</a>
+            <a href="Index.php"  class="btn btn-danger btn-lg btn-block">Salir</a>
 
         </div> 
     </div>

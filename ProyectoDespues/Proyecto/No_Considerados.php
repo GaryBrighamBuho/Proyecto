@@ -11,38 +11,39 @@
 
 <body>
 <div class="container mt-5">
-    <form action = "Alumnos.php">
-        <h3>ALUMNOS NO CONSIDERADOS EN TUTORIA 2022-I</h3>
-        <a href="MenuOp.php"  class="btn btn-danger btn-lg btn-block">Regresar</a>
+            <form action = "Alumnos.php">
+                <h3>ALUMNOS NO CONSIDERADOS EN TUTORIA 2022-I</h3>
+                <a href="MenuOp.php"  class="btn btn-danger btn-lg btn-block">Regresar</a>
+                
+            </form>
+            <table class="table table-sm table-bordered table-dark" >
+                <thead class="table-success table-dark table-bordered " >
+                    <tr>
+                        <th>#</th>
+                        <th>CODIGO</th>
+                        <th>NOMBRE</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    
+                    <?php echo "<br><br>";
+                            session_start();
+                            $ListaAlumnos=$_SESSION["listaDeNoConsiderados"];
+
         
-    </form>
-    <table class="table table-sm table-bordered table-dark" >
-        <thead class="table-success table-dark table-bordered " >
-            <tr>
-                <th>#</th>
-                <th>CODIGO</th>
-                <th>NOMBRE</th>
-            </tr>
-        </thead>
+                            $i=1;
+                            foreach ($ListaAlumnos as $key => $valor) {
 
-        <tbody>
-            
-            <?php echo "<br><br>";
-                    session_start();
-                    $ListaAlumnos=$_SESSION["listaDeNoConsiderados"];
-
-                    include("ExtraccionDeClases.php");
-                    $i=1;
-                    foreach ($ListaAlumnos as $clave => $valor) {
-            ?>
-            <tr>
-                <th><?php  echo $i;  ?> </th>
-                <th><?php  echo $clave;   ?></th>
-                <th><?php  echo $valor;  ?></th>
-            </tr>
-            <?php $i++;} ?>
-        </tbody>
-    </table>
+                    ?>
+                    <tr>
+                        <th><?php  echo $i;  ?> </th>
+                        <th><?php  echo $key;   ?></th>
+                        <th><?php  echo $valor;  ?></th>
+                    </tr>
+                    <?php $i++;} ?>
+                </tbody>
+            </table>
 
 </div>  
 </body>

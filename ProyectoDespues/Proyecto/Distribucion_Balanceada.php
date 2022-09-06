@@ -32,7 +32,7 @@
                     $ListaAlumnos=$_SESSION["NuevosTutorados"];
                     $ListaAlumnos2=$_SESSION["ListaAlumnos"];
 
-                    include("ExtraccionDeClases.php");
+                    include("MovimientoMetodos.php");
                     foreach ($ListaAlumnos as $clave => $valor) {
                         if($valor==": DOCENTE"){
                             ?>

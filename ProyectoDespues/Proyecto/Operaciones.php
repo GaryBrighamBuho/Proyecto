@@ -4,7 +4,7 @@ if(empty($_FILES['Docentes2022']['name'])) {
     header("Location: ".$nuevaURL);
 }
 
-include("ExtraccionDeClases.php");
+include("MovimientoMetodos.php");
 # ------------------ ALUMNOS MATRICULADOS ---------------------
 $dataset_Matriculados = $_FILES["Matriculados2022"]["name"];
 $dataset_auxMatriculados = $_FILES["Matriculados2022"]["tmp_name"];

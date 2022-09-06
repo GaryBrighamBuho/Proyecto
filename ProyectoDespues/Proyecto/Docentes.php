@@ -25,7 +25,7 @@
             <?php echo "<br><br>";
                     session_start();
                     $ListaDocentes=$_SESSION["ListaDocentes"];
-                    include("ExtraccionDeClases.php");
+                    include("MovimientoMetodos.php");
                     $i=1;
                     foreach ($ListaDocentes as $clave => $valor) {
             ?>
