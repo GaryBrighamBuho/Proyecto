@@ -16,18 +16,15 @@
     <table class="table table-sm table-bordered table-dark" >
         <thead class="table-success table-dark table-bordered " >
             <tr>
-                <th>#</th>
                 <th>CODIGO</th>
                 <th>NOMBRE</th>
             </tr>
         </thead>
-
         <tbody>
             
             <?php echo "<br><br>";
                     session_start();
                     $ListaAlumnos=$_SESSION["ListaAlumnos"];
-
                     include("MovimientoMetodos.php");
                     $i=1;
                     foreach ($ListaAlumnos as $clave => $valor) {
