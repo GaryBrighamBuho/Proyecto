@@ -10,7 +10,7 @@
 <body>
 <div class="container mt-5">
     <form action = "Alumnos.php">
-        <h3>DOCENTES SEMESTRE 2021-I</h3>
+        <h3>DOCENTES SEMESTRE</h3>
         <a href="MenuOp.php"  class="btn btn-danger btn-lg btn-block">Regresar</a>
     </form>
     <table class="table table-sm table-bordered table-dark" >

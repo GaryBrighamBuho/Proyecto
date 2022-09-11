@@ -25,15 +25,15 @@
             <h10> * ES OBLIGATORIO INGRESAR TODOS LOS CAMPOS <h10><br><br>
             <form action="Operaciones.php" method ="POST" enctype="multipart/form-data">
                 <h3>Lista de Alumnos Matriculados</h3>
-                <input type="file" class="form-control mb-3" name="Matriculados2022" >
+                <input type="file" class="form-control mb-3" name="Matriculados" >
 
                 <br>
                 <h3>Lista de docentes para el presente semestre.</h3>
-                <input type="file" class="form-control mb-3" name="Docentes2022" >
+                <input type="file" class="form-control mb-3" name="Docentes" >
 
                 <br>
                 <h3>Distribución de tutorías del anterior semestre.</h3>
-                <input type="file" class="form-control mb-3" name="Tutorados2021" >
+                <input type="file" class="form-control mb-3" name="Tutorados" >
                 <br>
                 <input type="submit" name ="submit"  class="btn btn-primary"  value="Agregar">
             </form>

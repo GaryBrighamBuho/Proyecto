@@ -1,24 +1,24 @@
 <?php
-if(empty($_FILES['Docentes2022']['name'])) {
+if(empty($_FILES['Docentes']['name'])) {
     $nuevaURL="Main.php";
     header("Location: ".$nuevaURL);
 }
 
 include("MovimientoMetodos.php");
 # ------------------ ALUMNOS MATRICULADOS ---------------------
-$dataset_Matriculados = $_FILES["Matriculados2022"]["name"];
-$dataset_auxMatriculados = $_FILES["Matriculados2022"]["tmp_name"];
-$dataset_bugMatriculados = $_FILES["Matriculados2022"]["error"];
+$dataset_Matriculados = $_FILES["Matriculados"]["name"];
+$dataset_auxMatriculados = $_FILES["Matriculados"]["tmp_name"];
+$dataset_bugMatriculados = $_FILES["Matriculados"]["error"];
 
 # --------------------- DOCENTES -----------------------
-$dataset_Docentes = $_FILES["Docentes2022"]["name"];
-$dataset_auxDocentes = $_FILES["Docentes2022"]["tmp_name"];
-$dataset_bugDocentes = $_FILES["Docentes2022"]["error"];
+$dataset_Docentes = $_FILES["Docentes"]["name"];
+$dataset_auxDocentes = $_FILES["Docentes"]["tmp_name"];
+$dataset_bugDocentes = $_FILES["Docentes"]["error"];
 
 # ------------- TUTORADOS --------------------
-$dataset_Tutorados = $_FILES["Tutorados2021"]["name"];
-$dataset_auxTutorados = $_FILES["Tutorados2021"]["tmp_name"];
-$dataset_bugTutorados = $_FILES["Tutorados2021"]["error"];
+$dataset_Tutorados = $_FILES["Tutorados"]["name"];
+$dataset_auxTutorados = $_FILES["Tutorados"]["tmp_name"];
+$dataset_bugTutorados = $_FILES["Tutorados"]["error"];
 if($dataset_bugDocentes == 0 & $dataset_bugMatriculados == 0 & $dataset_bugTutorados == 0)
 {
     $dataset_preMatriculados = explode(".",$dataset_Matriculados);

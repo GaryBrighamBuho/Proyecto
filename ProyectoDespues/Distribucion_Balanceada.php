@@ -12,7 +12,7 @@
 <body>
 <div class="container mt-5">
     <form action = "Alumnos.php">
-        <h3>DISTRIBUCION BALANCEADA DE TUTORANDOS 2022-I</h3>
+        <h3>DISTRIBUCION BALANCEADA DE TUTORANDOS</h3>
         <a href="MenuOp.php"  class="btn btn-danger btn-lg btn-block">Regresar</a>
         
     </form>

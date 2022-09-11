@@ -23,9 +23,9 @@
             </div>
             <br>
             <div class="d-flex flex-row bd-highlight mb-3">
-                <div class="p-2 bd-highlight"><a href="Alumnos.php" class="btn btn-secondary" >ALUMNOS MATRICULADOS 2022-I</a></div>
-                <div class="p-2 bd-highlight"><a href="Docentes.php" class="btn btn-secondary">DOCENTES 2022-I</a></div>
-                <div class="p-2 bd-highlight"><a href="Tutorados.php" class="btn btn-secondary">TUTORADOS 2022-I</a></div>
+                <div class="p-2 bd-highlight"><a href="Alumnos.php" class="btn btn-secondary" >ALUMNOS MATRICULADOS</a></div>
+                <div class="p-2 bd-highlight"><a href="Docentes.php" class="btn btn-secondary">DOCENTES</a></div>
+                <div class="p-2 bd-highlight"><a href="Tutorados.php" class="btn btn-secondary">TUTORADOS</a></div>
             </div>
 
             <br>
@@ -42,7 +42,7 @@
             <br>
 
             <div class="d-flex flex-row bd-highlight mb-3">
-                <div class="p-2 bd-highlight"><a href="No_Considerados.php" class="btn btn-secondary">ALUMNOS NO CONSIDERADOS PARA TUTORIA SEMESTRE 2022 - I</a></div>
+                <div class="p-2 bd-highlight"><a href="No_Considerados.php" class="btn btn-secondary">ALUMNOS NO CONSIDERADOS PARA TUTORIA SEMESTRE</a></div>
                 <div class="p-2 bd-highlight"><a href="Distribucion_Balanceada.php" class="btn btn-secondary">DISTRIBUCION BALANCEADA DE TUTORIAS</a></div>
             </div>
             
