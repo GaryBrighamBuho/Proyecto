@@ -1,7 +1,5 @@
 INTEGRANTES:
 182900 - CHUNGA CASTILLO GARY BRIGHAM
-154622 - CONDORI ALCAZAR JUAN CARLOS
-
 -> INTRUCCIONES:
  1. Abrir en el localhost la dirreccion
  2. Ingresar los archivos csv que estan en la carpeta ArchivosCSV

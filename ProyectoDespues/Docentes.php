@@ -11,12 +11,12 @@
 <div class="container mt-5">
     <form action = "Alumnos.php">
         <h3>DOCENTES SEMESTRE</h3>
-        <a href="MenuOp.php"  class="btn btn-danger btn-lg btn-block">Regresar</a>
+        <a href="MenuOperaciones.php"  class="btn btn-danger btn-lg btn-block">Regresar</a>
     </form>
     <table class="table table-sm table-bordered table-dark" >
         <thead class="table-success table-dark table-bordered " >
             <tr>
-                <th>#</th>
+                <th>N°</th>
                 <th>NOMBRE</th>
                 <th>CATEGORIA</th>
             </tr>
@@ -25,12 +25,12 @@
             <?php echo "<br><br>";
                     session_start();
                     $ListaDocentes=$_SESSION["ListaDocentes"];
-                    include("MovimientoMetodos.php");
                     $i=1;
+                    include("Funciones.php");
                     foreach ($ListaDocentes as $clave => $valor) {
             ?>
             <tr>
-                <th><?php  echo $i;  ?> </th>
+                <th><?php  echo $i;   ?></th>
                 <th><?php  echo $clave;   ?></th>
                 <th><?php  echo $valor;  ?></th>
             </tr>

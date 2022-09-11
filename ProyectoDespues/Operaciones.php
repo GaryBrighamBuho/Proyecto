@@ -1,10 +1,10 @@
 <?php
 if(empty($_FILES['Docentes']['name'])) {
-    $nuevaURL="Main.php";
+    $nuevaURL="Index.php";
     header("Location: ".$nuevaURL);
 }
 
-include("MovimientoMetodos.php");
+include("Funciones.php");
 # ------------------ ALUMNOS MATRICULADOS ---------------------
 $dataset_Matriculados = $_FILES["Matriculados"]["name"];
 $dataset_auxMatriculados = $_FILES["Matriculados"]["tmp_name"];
@@ -80,15 +80,15 @@ while(!feof($archivo_Tuto))
 
 /* ============ PROGRAMA PRINCIPAL ============ */
 
-$Matriculados = AlumnosToThree($ListaAlumnos);
-$Profesores = DocentesToThree($ListaDocentes);
+$Matriculados = AlumnosTresColumnas($ListaAlumnos);
+$Profesores = DocentesTresColumnas($ListaDocentes);
 $Tutores = Tutorados($ListaTutorados);
-$AlumnosTutores = AlumnosToTwo($ListaTutorados);
-$Final = DiferenciaListas($AlumnosTutores,$Matriculados);
+$AlumnosTutores = AlumnosDosColumnas($ListaTutorados);
+$Final = CompararListas($AlumnosTutores,$Matriculados);
 
 /* ============ Alumnos Nuevos ============ */
 
-$NuevosAlumnos = DiferenciaListas($Matriculados,$AlumnosTutores);
+$NuevosAlumnos =CompararListas($Matriculados,$AlumnosTutores);
 
 $NuevosTutorados = RegularTutoradosDocentes($ListaTutorados,$NuevosAlumnos);
 session_start();
@@ -98,6 +98,6 @@ $_SESSION["ListaTutorados"] = $Tutores;
 $_SESSION["listaDeNoConsiderados"] = $Final;
 $_SESSION["NuevosTutorados"] = $NuevosTutorados;
 
-$central = "MenuOp.php";
+$central = "MenuOperaciones.php";
 header("Location:".$central);
 ?>
